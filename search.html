@@ -3,22 +3,65 @@
     <title>Search</title>
 </head>
 <body>
+    <h1>Ecosia search</h1>
     <form action="https://www.ecosia.org/search" method="get">
-        <label for="search">What are you searching for?</label> 
-        <input id="search" type="text" name="q"> 
+        <label for="search">What are you searching for?</label> <!-- for služi da bi se nešto pronašlo-->
+        <input id="search" type="text" name="q"> <!-- name - pod kojim se imenom pohrani zahtjev-->
         <button type="submit">Search</button>
     </form>
-
+    <h1>DuckDuckGo search</h1>
     <form action="https://duckduckgo.com/" method="get">
         <label for="search">What are you searching for?</label>
         <input id="search" type="text" name="q">
         <button type="submit">Search</button>
     </form>
 
+    <h1>Google search</h1>
     <form action="https://www.google.com/" method="get">
         <label for="search">What are you searching for?</label>
         <input id="search" type="text" name="q">
         <button type="submit">Search</button>
+    </form>
+    <hr>
+    <h1>Instrument Cable search</h1>
+    <form action="https://www.thomann.de/intl/instrument_cables.html" method="get">
+        <div>
+        <label for="sort">Sort: </label>
+            <select name="oa">
+                <option value="" disabled selected>Pleace choose...</option>
+                <option value="smb">Popularity</option>
+                <option value="pra">Price (Low to High)</option>
+                <option value="prd">Price (High to Low)</option>
+                <option value="rat">Best rated first</option>
+                <option value="rel">Newest first</option>
+                <option value="ala">Alphabet (A-Z)</option>
+                <option value="ald">Alphabet (Z-A)</option>
+            </select>
+            </div>
+
+            <div>
+            <label>Price (from-to)</label>
+            <input type="number" min="0" step="0.01" name="price-first">
+            <input type="number" min="0" max="1000" step="0.01" name="price-last">
+            </div>
+
+            <div>
+                <lable>Lenght</lable>
+                <input type="number" min="0" name="feature-57478-first">
+                <input type="number" min="0" name="feature-57478-last">
+            </div>
+
+            <div>
+                <lable>Lenght</lable>
+                <input type="range" min="0" max="50" name="feature-57478-first">
+                <input type="range" min="0" max="50" name="feature-57478-last">
+            </div>
+
+            <div>
+            <button type="submit">Search</button>
+            </div>
+
+          
     </form>
 </body>
 
